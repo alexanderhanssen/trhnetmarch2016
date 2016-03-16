@@ -73,7 +73,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Article.cs" />
+    <Compile Include="ApiSearchTests.cs" />
     <Compile Include="ApiExploratoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -103,7 +103,12 @@
     <None Include="Data\reuters-021.json" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Elastic\Elastic.csproj">
+      <Project>{bab5eff3-122d-4e1b-bae6-877f770beb33}</Project>
+      <Name>Elastic</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

@@ -126,6 +126,7 @@ namespace Elastic.Test
         }
 
         [TestMethod]
+        [Ignore]
         public void Should_Be_Able_To_Index_Corpus_Really_Really_Fast()
         {
             var articles = DeserializeCorpus();
